@@ -1,0 +1,61 @@
+---
+import Container1 from "./components/Container1.astro";
+import Container2 from "./components/Container2.astro";
+import Container3 from "./components/Container3.astro";
+import Container4 from "./components/Container4.astro";
+import Container5 from "./components/Container5.astro";
+
+---
+
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Pedro Torrez</title>
+    </head>
+    <body>
+        <Container1/>
+        <Container2/>
+        <Container3/>
+        <Container4/>
+        <Container5/>
+    </body>
+</html>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+    margin: 10px;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items: stretch;
+    align-items: stretch;
+    gap: 5px;
+    height: auto;
+}
+
+
+
+@media screen and (max-width: 969px){
+    body {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        height: auto;
+    }
+}
+</style>
+

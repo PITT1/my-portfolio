@@ -1,0 +1,107 @@
+---
+
+---
+
+<div class="container5">
+    <a href="https://github.com/PITT1/Snake-Game-JS"><span><img src="public/icons8-carpeta.svg" alt="snake" height="50px"><div>Snake-game</div></span></a>
+    <a href="https://github.com/PITT1/maze-game"><span><img src="public/icons8-carpeta.svg" alt="landing page" height="50px"><div>maze-game</div></span></a>
+    <a href="https://github.com/PITT1/simple-pokeApi-app"><span><img src="public/icons8-carpeta.svg" alt="UI gallery" height="50px"><div>Pokedex</div></span></a>
+    <a href="#"><span><img src="public/icons8-carpeta.svg" alt="UI gallery" height="50px"><div>Landing</div></span></a>
+</div>
+
+<style>
+    .container5 {
+    position: relative;
+    height: auto;
+    width: auto;
+    background-color: rgba(46, 46, 46, 0);
+    border-radius: 10px;
+    border: 1px solid rgb(112, 112, 112);
+    z-index: 0;
+    transition: .3s ease;
+    grid-row: 3/4;
+    grid-column: 2/3;
+    overflow: hidden;
+    color: rgb(238, 238, 238);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 200;
+}
+
+.container5::before {
+    position: absolute;
+    content: 'Proyectos';
+    font-weight: 200;
+    font-size: 35px;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(20deg, rgb(70, 11, 182), rgb(0, 0, 0), rgb(0, 0, 0), rgb(70, 11, 182));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s ease;
+    z-index: 1;
+}
+
+.container5:hover::before {
+    transform: translateY(-100%);
+}
+
+.container5:hover {
+    border: 1px solid rgb(45, 179, 189);
+    box-shadow: 0 0 10px rgb(45, 179, 189),
+                0 0 50px rgb(45, 179, 189); 
+    z-index: 1;
+}
+
+.container5 a {
+    position: relative;
+    cursor: pointer;
+    transition: .3s ease;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.container5 a:hover {
+    transform: translateY(-15px);
+}
+
+.container5 a div {
+    position: absolute;
+    pointer-events: none;
+    padding: 5px 10px;
+    background-color: rgba(196, 196, 196, 0);
+    top: 30px;
+    transition: 0.3s ease;
+    color: rgba(240, 248, 255, 0);
+    border-radius: 5px;
+}
+
+.container5 a img:hover + div {
+    top: -30px;
+    color: rgb(238, 238, 238);
+    background-color: rgb(36, 36, 36);
+}
+
+@media screen and (max-width: 969px){
+    .container5 {
+        width: 100%;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .container5 {
+        width: 49%;
+        height: 430px;
+    }
+}
+
+@media screen and (max-width: 550px){
+    .container5 {
+        width: 100%;
+        height: 150px;
+    }
+}
+</style>

@@ -1,0 +1,96 @@
+---
+
+---
+
+<div class="container2">
+    <h2>Acerca de mi</h2>
+    <p>Hola, mi nombre es Pedro Torrez, un apasionado desarrollador web full stack con base en Venezuela. Con un año de experiencia en la industria, estoy comprometido con el aprendizaje continuo y la adaptación a las diversas tecnologías del desarrollo web. Mi amor por el código supera incluso mi afición por el café. ¡Espero trabajar contigo!</p>
+</div>
+
+<style>
+    .container2{
+    height: auto;
+    max-width: auto;
+    position: relative;
+    border: 1px solid rgb(112, 112, 112);
+    border-radius: 10px; 
+    background-color: rgba(46, 46, 46, 0);
+    overflow: hidden;
+    transition: .3s ease;
+    z-index: 0;
+    grid-row: 1/4;
+    grid-column: 3/4;
+}
+
+.container2::before {
+    content: '';
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    background-color: rgb(70, 11, 182);
+    z-index: -1;
+    filter: blur(60px);
+    top: -10%;
+    left: -50%;
+}
+
+.container2::after {
+    content: '';
+    position: absolute;
+    height: 400px;
+    width: 400px;
+    background-color: rgb(70, 11, 182);
+    z-index: -1;
+    top: 60%;
+    left: 50%;
+    border-radius: 50%;
+    filter: blur(40px);
+}
+
+.container2:hover {
+    border: 1px solid rgb(45, 179, 189);
+    box-shadow: 0 0 10px rgb(45, 179, 189),
+                0 0 50px rgb(45, 179, 189); 
+    z-index: 1;
+}
+
+.container2 h2 {
+    color: rgb(238, 238, 238);
+    font-weight: 400;
+    padding: 10px 10px;
+    cursor: default;
+    text-align: center;
+}
+
+.container2 p {
+    color: rgb(194, 194, 194);
+    font-weight: 200;
+    padding: 10px;
+    cursor: default;
+    font-size: 25px;
+}
+
+@media screen and (max-width: 969px){
+    .container2 {
+        width: 49%;
+    }
+    
+    .container2 p {
+        font-size: 23px;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .container2 {
+        height: 720px;
+    }
+}
+
+@media screen and (max-width: 550px){
+    .container2 {
+        width: 100%;
+        height: auto;
+    }
+}
+</style>
